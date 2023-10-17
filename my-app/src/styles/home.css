@@ -1,0 +1,196 @@
+.feature__subtitle{
+    color: #df2020;
+    font-weight: 700;
+}
+.landing{
+    background: url("../assets/images/landing.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    position: relative;
+}
+section:first-child {
+    padding-top: 0px;
+}
+
+.feature__title {
+    font-weight: 700;
+}
+.feature__title span{
+    color: #df2020;
+    font-weight: 700;
+
+}
+
+.feature__text{
+    color: #777;
+    font-weight: 600;
+}
+
+
+
+.feature__item p{
+    color: #777;
+    font-weight: 600;
+}
+
+
+.food__category {
+    background: #df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+}
+
+.food__category button {
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+}
+
+.food__category button img {
+    width: 20px;
+    height: 20px;
+}
+
+.foodBtnActive {
+    background: #fff !important;
+    border-radius: 5px;
+    color: #df2020 !important;
+}
+
+.network__img {
+    margin-top: 50px !important;
+    max-height: 450px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+
+}
+.network__img img {
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    zoom: 20%;
+}
+.testimonial__subtitle {
+    color: #df2020;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.testimonial__title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.testimonial__title span {
+    color: #df2020;
+    font-weight: 600;
+
+}
+
+.testimonial__desc {
+    color: #777;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.hr{
+    width: 100px;
+    margin-top: 30px;
+}
+.product__list {
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero__content h5{
+        font-size: 1.2rem;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .hero__service p {
+        font-size: 1rem;
+    }
+    .feature__item h5 {
+        font-size: 0.9rem;
+    }
+
+    .feature__item p {
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+    }
+
+    .feature__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .feature__text {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .food__category {
+        padding: 15px 0px;
+    }
+
+    .food__category button {
+        padding: 5px 15px;
+        font-size: 0.7rem;
+    }
+    
+
+
+    .testimonial__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .testimonial__desc {
+        font-size: 1.4rem;
+    }
+    .network__img {
+        max-height: 300px;
+        margin-top: 50px !important;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .hero__content h5{
+        font-size: 1.2rem;
+    }
+
+    .food__category {
+        padding: 15px 0px !important;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .hero__btns button, .hero__btns a {
+        padding: 5px 15px;
+    }
+    .hero__service p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .food__category img {
+        display: none;
+    }
+}
