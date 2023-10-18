@@ -23,6 +23,7 @@ const Register = () => {
                                 <form action="" className="form mb-5" onSubmit={handleSubmit}>
                                     <div className="form__group">
                                         <input 
+                                            name='fullName'
                                             type="text" 
                                             placeholder='Enter your full name' 
                                             required
@@ -31,6 +32,7 @@ const Register = () => {
                                     </div>
                                     <div className="form__group">
                                         <input 
+                                            name='email'
                                             type="email" 
                                             placeholder='Enter your email' 
                                             required
@@ -39,6 +41,7 @@ const Register = () => {
                                     </div>
                                     <div className="form__group">
                                         <input 
+                                            name="password"
                                             type="password" 
                                             placeholder='Enter your password' 
                                             required

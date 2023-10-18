@@ -135,6 +135,7 @@ const FoodDetails = () => {
                                             <div className='form__group'>
                                                 <input 
                                                     type="text" 
+                                                    name="name"
                                                     placeholder='Enter your name' 
                                                     value={enteredName}
                                                     onChange={(e) => setEnteredName(e.target.value)}
@@ -143,6 +144,7 @@ const FoodDetails = () => {
                                             </div>
                                             <div className='form__group'>
                                                 <input 
+                                                    name="email"
                                                     type="text" 
                                                     placeholder='Enter your email' 
                                                     value={enteredEmail}
@@ -152,6 +154,7 @@ const FoodDetails = () => {
                                             </div>
                                             <div className='form__group'>
                                                 <textarea 
+                                                    name="review"
                                                     rows={5} 
                                                     type="text" 
                                                     placeholder='Write your review'

@@ -80,5 +80,9 @@ export const selectTotalAmount = (state) => {
     return formatter.format(state.cart.totalAmount);
 }
 
+export const selectCheckoutTotalAmount = (state) => {
+    return formatter.format(state.cart.totalAmount + 5);
+}
+
 export const { addItem, removeItem, deleteItem } = cartSlice.actions;
 export default cartSlice.reducer;

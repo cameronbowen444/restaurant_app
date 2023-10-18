@@ -63,7 +63,7 @@ const AllFood = () => {
                             {
                                 displayPage
                                     .map((item) => (
-                                        <Col lg='3' md='4' sm='5' xs='9' index={item.id} className='mb-4 product__list'> 
+                                        <Col lg='3' md='4' sm='5' xs='9' index={item.id} className='mb-4 product__list' key={item.id}> 
                                             <ProductCart item={item} />
                                         </Col>
                                     ))

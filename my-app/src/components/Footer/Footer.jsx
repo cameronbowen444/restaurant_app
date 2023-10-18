@@ -50,8 +50,8 @@ const Footer = () => {
                             <h5 className='footer__title'>Newsletter</h5>
                             <p>Subscribe to our newsletter</p>
                             <div className="newsletter">
-                                <input type="email" placeholder='Enter your email' />
-                                <span><i class="ri-send-plane-line"></i></span>
+                                <input name='email' type="email" placeholder='Enter your email' />
+                                <span><i className="ri-send-plane-line"></i></span>
                             </div>
                         </Col>
                     </Row>
@@ -65,10 +65,10 @@ const Footer = () => {
                         <Col lg='6' md='6'>
                             <div className="social__links d-flex align-items-center gap-4 justify-content-end">
                                 <p className='m-0'>Follow: </p>
-                                <span> <Link to={'https://www.facebook.com'}><i class="ri-facebook-circle-fill"></i></Link> </span>
-                                <span> <Link to={'https://www.facebook.com'}><i class="ri-github-fill"></i></Link> </span>
-                                <span> <Link to={'https://www.facebook.com'}><i class="ri-youtube-line"></i></Link> </span>
-                                <span> <Link to={'https://www.facebook.com'}><i class="ri-linkedin-box-fill"></i></Link> </span>
+                                <span> <Link to={'https://www.facebook.com'}><i className="ri-facebook-circle-fill"></i></Link> </span>
+                                <span> <Link to={'https://www.facebook.com'}><i className="ri-github-fill"></i></Link> </span>
+                                <span> <Link to={'https://www.facebook.com'}><i className="ri-youtube-line"></i></Link> </span>
+                                <span> <Link to={'https://www.facebook.com'}><i className="ri-linkedin-box-fill"></i></Link> </span>
 
                             </div>
                         </Col>

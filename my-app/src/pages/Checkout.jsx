@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 import {useSelector} from 'react-redux';
-import { selectTotalAmount } from '../store/cartSlice';
+import { selectTotalAmount, selectCheckoutTotalAmount } from '../store/cartSlice';
 import { Container, Row, Col } from 'reactstrap';
 import CommonSection from '../components/UI/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
@@ -17,8 +17,8 @@ const Checkout = () => {
 
     const shippingInfo = [];
     const cartTotal = useSelector(selectTotalAmount);
-    const shippingCost = 5;
-    const totalAmount = cartTotal + Number(shippingCost)
+    const shippingCost = 5.00;
+    const totalCheckoutAmount = useSelector(selectCheckoutTotalAmount);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -96,10 +96,10 @@ const Checkout = () => {
                             </Col>
                             <Col lg='4' md='6'>
                                 <div className='checkout__bill'>
-                                    <h6 className='d-flex align-items-center justify-content-between mb-3'>Subtotal: <span>${cartTotal}</span></h6>
+                                    <h6 className='d-flex align-items-center justify-content-between mb-3'>Subtotal: <span>{cartTotal}</span></h6>
                                     <h6 className='d-flex align-items-center justify-content-between mb-3'>Delivery Fee: <span>${shippingCost}</span></h6>
                                     <div className='checkout__total'>
-                                        <h5 className='d-flex align-items-center justify-content-between'>Total: <span>${totalAmount}</span></h5>
+                                        <h5 className='d-flex align-items-center justify-content-between'>Total: <span>{totalCheckoutAmount}</span></h5>
                                     </div>
 
                                 </div>

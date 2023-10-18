@@ -49,7 +49,7 @@ const Cart = () => {
                                 }
                                 <div>
                                     <h6 className='mt-4'>
-                                        Subtotal: $
+                                        Subtotal: 
                                         <span className='cart__subtotal'>{totalAmount}</span>
                                     </h6>
                                     <p>Taxes and delivery fee calculated at checkout</p>

@@ -182,7 +182,7 @@ section:first-child {
         line-height: 40px;
     }
     .hero__btns button, .hero__btns a {
-        padding: 5px 15px;
+        padding: 5px 8px;
     }
     .hero__service p {
         font-size: 1rem;

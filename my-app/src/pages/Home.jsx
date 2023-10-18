@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
 import Helmet from '../components/Helmet/Helmet.js';
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { HashLink } from 'react-router-hash-link';
 
-import heroImg from '../assets/images/hero.png';
 import '../styles/hero-section.css';
 import '../styles/home.css';
 
@@ -22,7 +21,6 @@ import foodCategoryImg03 from '../assets/images/bread.png'
 
 import ProductCard from '../components/UI/product-card/ProductCard.jsx';
 
-import whyImg from '../assets/images/whyus.jpg'
 
 import networkImg from '../assets/images/network.jpg'
 
@@ -50,14 +48,6 @@ const Home = () => {
 
     const [category, setCategory] = useState('ALL');
     const [allProducts, setAllProducts] = useState(products);
-
-    const [hotPizza, setHotPizza] = useState([]);
-
-    useEffect(() => {
-        const filteredPizza = products.filter(item => item.category === 'Pizza')
-        const slicePizza = filteredPizza.slice(0, 4);
-        setHotPizza(slicePizza)
-    }, [])
 
     useEffect(() => {
         if (category === 'ALL') {
@@ -93,7 +83,7 @@ const Home = () => {
                                     <h1 className='mb-4 hero__title'><span>Food City</span><br />delivers food to <br /> your <span> doorstep</span></h1>
                                     <div className='hero__btns d-flex align-items-center gap-5 mt-4'>
                                         <HashLink to={'/#order'} className='order__btn d-flex align-items-center justify-content-between'>
-                                            Order Now <i class="ri-arrow-right-s-line"></i>
+                                            Order Now <i className="ri-arrow-right-s-line"></i>
                                         </HashLink> 
                                         <button className='all__foods-btn'>
                                             <Link to={'/foods'}>See Full Menu</Link>
@@ -102,13 +92,13 @@ const Home = () => {
                                     <div className='hero__service d-flex align-items-center gap-5 mt-5'>
                                         <p className='d-flex align-items-center gap-2'>
                                             <span className='shipping__icon'>
-                                                <i class="ri-car-line"></i>
+                                                <i className="ri-car-line"></i>
                                             </span> 
                                             No delivery fee
                                         </p>
                                         <p className='d-flex align-items-center gap-2'>
                                             <span className='shipping__icon'>
-                                                <i class="ri-shield-check-line"></i>
+                                                <i className="ri-shield-check-line"></i>
                                             </span> 
                                             100% secure checkout
                                         </p>
